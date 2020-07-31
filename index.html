@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mis Sensores</title>
+	<link rel="stylesheet" type="text/css" href="sensores.css">
+	<script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-database.js"></script>
+	<script src="sensores.js"></script>
+</head>
+<body>
+	<header>Sistemas de Medicion De Los Sensores</header>
+	<main>
+		<section id="Temp">
+			<h1>Temperatura</h1>
+			<h2 id="Temperatura">0.0</h2>
+		</section>
+		<section id="HumAmb">
+			<h1>Humedad En El Ambiente</h1>
+			<h2 id="HumedadAmb">0.0</h2>
+		</section>
+		<section id="Gas">
+			<h1>Gas</h1>
+			<h2 id="gas">0.0</h2>
+		</section>
+		<section id="Hum">
+			<h1>Humedad</h1>
+			<h2 id="Humedad">0.0</h2>
+		</section>
+		<section id="Dis">
+			<h1>Distancia</h1>
+			<h2 id="Distancia">0.0</h2>
+		</section>
+		<section id="LED">
+			<h1>Estado LED</h1>
+			<h2 id="Led">0.0</h2>
+		</section>
+		<section>
+			<button class="myButton" onclick="Prender()">Prender</button>
+			<button class="myButton" onclick="Apagar()">Apagar</button>
+		</section>
+
+	</main>
+</body>
+</html>
